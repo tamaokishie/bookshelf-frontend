@@ -14,22 +14,30 @@
 
 .book-card {
   width: 140px;
+  height: 320px; /* 固定高さで均等に見せる */
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 10px;
   background: #fefefe;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .book-card img {
   width: 120px;
   height: 180px;
   object-fit: cover;
+  align-self: center;
 }
 
 .book-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-start;
   margin-top: 10px;
-  font-size: 14px;
 }
 
 .progress input {
@@ -41,4 +49,17 @@
 .book-title {
   margin-top: 6px;
   font-weight: bold;
+  min-height: 2.8em; /* 2行分の高さを確保して揃える */
+}
+
+.note-area {
+  margin-top: auto; /* 常に下に配置 */
+  width: 100%;
+  padding: 4px;
+  font-size: 11px;
+  resize: vertical;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-family: sans-serif;
+  box-sizing: border-box;
 }
