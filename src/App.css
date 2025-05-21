@@ -68,10 +68,10 @@
 }
 
 /* ✅ レスポンシブ対応（スマホ画面幅） */
-@media (max-width: 600px) {
+@media (max-width: 0px) {
   .book-card {
-    width: calc(50% - 20px); /* 2列にする（マージン含めて） */
     height: auto;
+    padding: 8px;
   }
 
   .book-card img {
