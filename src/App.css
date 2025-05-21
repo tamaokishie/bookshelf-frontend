@@ -14,7 +14,7 @@
 
 .book-card {
   width: 140px;
-  height: 320px; /* 固定高さで均等に見せる */
+  height: 320px;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 10px;
@@ -38,28 +38,56 @@
   flex-grow: 1;
   justify-content: flex-start;
   margin-top: 10px;
+  font-size: 14px;
 }
 
 .progress input {
   width: 50px;
   text-align: right;
   margin-right: 4px;
+  font-size: 14px;
 }
 
 .book-title {
   margin-top: 6px;
   font-weight: bold;
-  min-height: 2.8em; /* 2行分の高さを確保して揃える */
+  min-height: 2.8em;
+  font-size: 13px;
 }
 
 .note-area {
-  margin-top: auto; /* 常に下に配置 */
+  margin-top: auto;
   width: 100%;
-  padding: 4px;
-  font-size: 11px;
+  padding: 6px;
+  font-size: 13px;
   resize: vertical;
   border-radius: 4px;
   border: 1px solid #ccc;
   font-family: sans-serif;
   box-sizing: border-box;
+}
+
+/* ✅ レスポンシブ対応（スマホ画面幅） */
+@media (max-width: 600px) {
+  .book-card {
+    width: 45vw;
+    height: auto;
+  }
+
+  .book-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .note-area {
+    font-size: 14px;
+  }
+
+  .progress input {
+    font-size: 16px;
+  }
+
+  .book-title {
+    font-size: 15px;
+  }
 }
