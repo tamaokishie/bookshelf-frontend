@@ -68,9 +68,10 @@
 }
 
 /* ✅ レスポンシブ対応（スマホ画面幅） */
-@media (max-width: 0px) {
+@media (max-width: 600px) {
   .book-card {
     height: auto;
+    width: calc(40% - 8px);
     padding: 8px;
   }
 
