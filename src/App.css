@@ -70,7 +70,7 @@
 /* ✅ レスポンシブ対応（スマホ画面幅） */
 @media (max-width: 600px) {
   .book-card {
-    width: 45vw;
+    width: calc(50% - 20px); /* 2列にする（マージン含めて） */
     height: auto;
   }
 
